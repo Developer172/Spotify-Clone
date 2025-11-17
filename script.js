@@ -10,13 +10,13 @@ let masterSongName = document.getElementById('masterSongName');
 gif.style.opacity = 0;
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songs = [
-    { songName: "At Peace", filePath: "song/1.mp3", coverPath: "cover/1.jpeg" },
-    { songName: "For A Reason", filePath: "song/2.mp3", coverPath: "cover/2.jpeg" },
-    { songName: "I Really do It", filePath: "song/3.mp3", coverPath: "cover/3.jpeg" },
-    { songName: "Boy Friend", filePath: "song/4.mp3", coverPath: "cover/4.jpeg" },
-    { songName: "Sifar Safar", filePath: "song/5.mp3", coverPath: "cover/5.jpeg" },
-    { songName: "Winning Speech", filePath: "song/6.mp3", coverPath: "cover/6.jpeg" },
-    { songName: "For You", filePath: "song/7.mp3", coverPath: "cover/6.jpeg" }
+    { songName: "At Peace", filePath: "1.mp3", coverPath: "cover/1.jpeg" },
+    { songName: "For A Reason", filePath: "2.mp3", coverPath: "cover/2.jpeg" },
+    { songName: "I Really do It", filePath: "3.mp3", coverPath: "cover/3.jpeg" },
+    { songName: "Boy Friend", filePath: "4.mp3", coverPath: "cover/4.jpeg" },
+    { songName: "Sifar Safar", filePath: "5.mp3", coverPath: "cover/5.jpeg" },
+    { songName: "Winning Speech", filePath: "6.mp3", coverPath: "cover/6.jpeg" },
+    { songName: "For You", filePath: "7.mp3", coverPath: "cover/6.jpeg" }
 ]
 songItems.forEach((element, i) => {
     element.getElementsByTagName("img")[0].src = songs[i].coverPath;
@@ -106,3 +106,4 @@ document.getElementById('previous').addEventListener('click', () => {
     masterPlay.classList.add('fa-pause-circle');
 
 })
+
